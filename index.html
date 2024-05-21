@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quizzy</title>
+  </head>
+  <body>
+    <div class="app">
+      <div id="attempted-questions"></div>
+      <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+      <div class="welcome-screen">
+        <h2>Welcome to the Quiz!</h2>
+        <button class="btn start-btn">Start Quiz</button>
+      </div>
+      <div class="hidden" id="quiz-container">
+        <h1>Question</h1>
+        <div class="quiz">
+          <h2 id="question">Question goes here</h2>
+          <div id="answer-button"></div>
+          <button class="next-btn">next</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

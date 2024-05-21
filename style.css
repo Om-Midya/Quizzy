@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blue;
+}
+
+.app {
+  background: white;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.app h1 {
+  font-size: 25px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+
+.quiz {
+  padding: 20px;
+}
+
+.quiz h2 {
+  font-size: 18px;
+}
+
+.btn {
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.btn:hover:not([disabled]) {
+  background: #222;
+  color: #fff;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+.next-btn {
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 150px;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 20px auto 0;
+  cursor: pointer;
+  display: none;
+}
+
+.correct {
+  background: green;
+}
+
+.incorrect {
+  background: red;
+}
+
+.hidden {
+  display: none;
+}
+
+#progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 0;
+  background-color: #4caf50; /* Change this to your preferred color */
+  transition: width 0.3s ease-in-out; /* This will animate the width changes */
+  border-radius: 10px; /* This will make the corners rounded */
+}
+
+/* Add a container for the progress bar to give it a background and some padding */
+#progress-bar-container {
+  margin: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 40%;
+  background-color: #f3f3f3;
+  padding: 3px;
+  border-radius: 10px; /* This will make the corners rounded */
+}
+
+#attempted-questions {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  z-index: 1001; /* Make sure it appears above the progress bar */
+}
